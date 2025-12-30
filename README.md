@@ -88,7 +88,7 @@ sudo docker exec -it logbot-db psql -U logbot -d logbot -c "\dt"
 | 9001 | Portainer Agent |
 
 
-# Logbot
+# n8n Integration
 
 n8n Workflow zur automatisierten Log-Analyse via Telegram mit Claude AI.
 
