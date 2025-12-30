@@ -87,6 +87,65 @@ sudo docker exec -it logbot-db psql -U logbot -d logbot -c "\dt"
 | 514 | Syslog (UDP/TCP) |
 | 9001 | Portainer Agent |
 
+
+# Logbot
+
+n8n Workflow zur automatisierten Log-Analyse via Telegram mit Claude AI.
+
+## Beschreibung
+
+Dieser Workflow ermöglicht es, Logs über Telegram abzufragen und automatisch von Claude Haiku analysieren zu lassen.
+
+### Ablauf
+
+```
+Telegram Nachricht → Logs abrufen → Prüfen ob Logs vorhanden → Claude Analyse → Antwort via Telegram
+```
+
+## Voraussetzungen
+
+- n8n (self-hosted oder Cloud)
+- Telegram Bot Token
+- Anthropic API Key
+- Logbot Webhook Endpoint
+
+## Installation
+
+1. Workflow in n8n importieren
+2. Credentials anlegen:
+   - `Telegram account` - Bot Token
+   - `Anthropic account` - API Key
+3. Umgebungsvariable setzen:
+   - `LOGBOT_WEBHOOK_URL` - URL zum Log-Endpoint
+
+## Umgebungsvariablen
+
+| Variable | Beschreibung |
+|----------|--------------|
+| `LOGBOT_WEBHOOK_URL` | Webhook URL für Log-Abruf |
+
+## Credentials
+
+Die Credential-IDs müssen nach dem Import durch eigene ersetzt werden:
+
+- `{{ ANTHROPIC_CREDENTIAL_ID }}` → Anthropic API Credential
+- `{{ TELEGRAM_CREDENTIAL_ID }}` → Telegram Bot Credential
+
+## Nodes
+
+| Node | Funktion |
+|------|----------|
+| Telegram Trigger | Empfängt Nachrichten |
+| HTTP: Logs abrufen | Holt Logs vom Webhook |
+| IF: Logs vorhanden | Prüft ob Logs existieren |
+| Code: Logs formatieren | Bereitet Logs für Claude auf |
+| AI Agent | Claude Haiku Analyse |
+| Telegram: Analyse senden | Sendet Ergebnis zurück |
+
+## Lizenz
+
+MIT
+
 ## Autor
 
 PF | Claude Opus 4
