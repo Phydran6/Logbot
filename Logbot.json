@@ -38,8 +38,8 @@
       "name": "Anthropic Chat Model",
       "credentials": {
         "anthropicApi": {
-          "id": "kNcQg7qqdb6vhXtR",
-          "name": "n8n-default"
+          "id": "YOUR_CREDENTIAL_ID",
+          "name": "YOUR_CREDENTIAL_NAME"
         }
       }
     },
@@ -57,11 +57,11 @@
       ],
       "id": "bfc2a1e3-4387-43cc-aeac-33e93d2dd41e",
       "name": "Wenn keine Logs da sind bescheid geben",
-      "webhookId": "74ec54f4-0e94-4178-968d-9ecb5820e4f6",
+      "webhookId": "",
       "credentials": {
         "telegramApi": {
-          "id": "Q6euroUz6oZYB6fj",
-          "name": "Telegram account"
+          "id": "YOUR_CREDENTIAL_ID",
+          "name": "YOUR_CREDENTIAL_NAME"
         }
       }
     },
@@ -80,17 +80,17 @@
       ],
       "id": "0ad12d42-942c-4b84-a579-86b0051ef3fc",
       "name": "Ich frage nach den aktuellen Logs",
-      "webhookId": "d1710268-6a40-4388-a50c-099a5d6b4929",
+      "webhookId": "",
       "credentials": {
         "telegramApi": {
-          "id": "Q6euroUz6oZYB6fj",
-          "name": "Telegram account"
+          "id": "YOUR_CREDENTIAL_ID",
+          "name": "YOUR_CREDENTIAL_NAME"
         }
       }
     },
     {
       "parameters": {
-        "url": "https://logbot.phytech.de/api/webhook/1/call?token=dcec86873d68f93c0d46ac8c6bf99d12f67693e4fea8cfef993cf0b5b9411d65",
+        "url": "https://YOUR_LOGBOT_URL/api/webhook/1/call?token=YOUR_TOKEN",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -163,11 +163,11 @@
       ],
       "id": "64609b01-368e-4fe9-8532-b644134ad7ac",
       "name": "Log Analyse zuschicken",
-      "webhookId": "e7d39008-a410-483c-a74a-5c39310cdb1a",
+      "webhookId": "",
       "credentials": {
         "telegramApi": {
-          "id": "Q6euroUz6oZYB6fj",
-          "name": "Telegram account"
+          "id": "YOUR_CREDENTIAL_ID",
+          "name": "YOUR_CREDENTIAL_NAME"
         }
       }
     },
@@ -185,36 +185,7 @@
       "name": "Output aufteilen"
     }
   ],
-  "pinData": {
-    "Ich frage nach den aktuellen Logs": [
-      {
-        "json": {
-          "update_id": 449297545,
-          "message": {
-            "message_id": 133,
-            "from": {
-              "id": 5918375688,
-              "is_bot": false,
-              "first_name": "Phil",
-              "username": "Phythaka",
-              "language_code": "de"
-            },
-            "chat": {
-              "id": 5918375688,
-              "first_name": "Phil",
-              "username": "Phythaka",
-              "type": "private"
-            },
-            "date": 1770838784,
-            "text": "was geht bei den logs"
-          }
-        },
-        "pairedItem": {
-          "item": 0
-        }
-      }
-    ]
-  },
+  "pinData": {},
   "connections": {
     "Anthropic Chat Model": {
       "ai_languageModel": [
@@ -309,11 +280,11 @@
     "callerPolicy": "workflowsFromSameOwner",
     "errorWorkflow": "BmuRAgcIiLS0QFgO"
   },
-  "versionId": "7027f809-6dcb-4119-bee1-8d6c99249ea4",
+  "versionId": "",
   "meta": {
     "templateCredsSetupCompleted": true,
-    "instanceId": "a82e448764d8f2b69e852fe51eecebe3405e7302fe84ecfc97f52198d2a7ccf1"
+    "instanceId": ""
   },
-  "id": "VdBoEDg3vE0hSGHa",
+  "id": "",
   "tags": []
 }
