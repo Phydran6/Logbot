@@ -1,4 +1,4 @@
-# Logbot – n8n Workflow
+# Logbot – n8n Workflow V1
 
 Ein n8n-Workflow, der per Telegram-Nachricht Logs von einem Logbot-Endpoint abruft, sie mit Claude (Anthropic AI) analysiert und die Auswertung zurück an Telegram sendet.
 
