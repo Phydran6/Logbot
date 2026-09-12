@@ -1,0 +1,16 @@
+# Diese Repo ist die Übersicht und enthält keinen Code. Fehler am Programm
+# gehören in das Repo, in dem der Code liegt — die Verweise führen dorthin.
+blank_issues_enabled: true
+contact_links:
+  - name: 🖥️ Logbot-Server — API, Oberfläche, Installer, Agents, Syslog, Datenbank
+    url: https://github.com/Phydran6/Logbot-Server/issues/new
+    about: Alles am Server selbst, von der Installation bis zur Sicherung.
+  - name: 📱 Logbot-Android-App — Einrichtung, WebView, App-Lock, Build
+    url: https://github.com/Phydran6/Logbot-Android-App/issues/new
+    about: Alles rund um die Android-App.
+  - name: 🔀 Logbot-n8n-flow — Import, Telegram, KI-Analyse
+    url: https://github.com/Phydran6/Logbot-n8n-flow/issues/new
+    about: Alles rund um den n8n-Ablauf.
+  - name: 📚 Dokumentation und Einstieg
+    url: https://github.com/Phydran6/Logbot/blob/main/docs/wegweiser.md
+    about: Wegweiser — jeder wichtige Link an einer Stelle.
